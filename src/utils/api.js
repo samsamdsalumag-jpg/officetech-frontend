@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// API Configuration - uses VITE_API_URL from environment
 const API = axios.create({
   baseURL: import.meta.env.VITE_API_URL || '/api',
   timeout: 30000,
